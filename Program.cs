@@ -11,13 +11,14 @@ class Program
     {
         Console.WriteLine("Въведете дължина на влака (метра)");
         int TrainLength = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Въведете скорост на влака (m/s)");
+        Console.WriteLine("Въведете скорост на влака (м/с)");
         int Speed = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Въведете време (секунди)");
         int Time = Convert.ToInt32(Console.ReadLine());
+        
         int TL = TunnelLenght(TrainLength, Speed, Time);
 
-        Console.Write("Lenght of the tunnel is " + TL + " metres.");
+        Console.Write("Дължината на тунела е " + TL + " метра.");
         
     }
 }
